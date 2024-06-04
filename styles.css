@@ -1,0 +1,125 @@
+/* 设置全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* 页眉样式 */
+header {
+    text-align: center;
+    padding: 2em 0;
+    background: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+    color: #fff;
+    position: relative;
+}
+
+/* 个人头像样式 */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* 圆形头像 */
+    display: block;
+    margin: 0 auto 1em auto;
+    border: 5px solid #fff; /* 白色边框 */
+    transition: transform 0.5s ease-in-out; /* 平滑过渡效果 */
+}
+
+/* 旋转动画 */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* 鼠标悬停时的旋转效果 */
+.profile-img:hover {
+    animation: rotate 1s linear infinite;
+}
+
+/* 导航栏样式 */
+nav {
+    background: #444;
+    color: #fff;
+    margin-top: 1em; /* 导航栏与页眉之间的间距 */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* 容器样式 */
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 各部分样式 */
+section {
+    padding: 2em 0;
+    background: rgba(255, 255, 255, 0.8); /* 半透明背景 */
+    margin-top: 1em; /* 各部分之间的间距 */
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.job {
+    margin-bottom: 1.5em;
+}
+
+/* 设置.contact-list的flexbox布局 */
+.contact-list {
+    display: flex; /* 使用flex布局 */
+    justify-content: space-between; /* 左右两侧对齐 */
+}
+
+/* 左侧联系方式区域样式 */
+.left-contact,
+.right-contact {
+    flex: 1; /* 占据剩余空间 */
+}
+
+/* 左侧联系方式列表样式 */
+.left-contact ul,
+.right-contact ul {
+    /* list-style: none; */
+    padding: 0;
+}
+
+/* 左侧联系方式列表项样式 */
+.left-contact ul li,
+.right-contact ul li {
+    text-align: left;
+}
+
+/* 页脚样式 */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 1em; /* 页脚与页面主体的间距 */
+}
